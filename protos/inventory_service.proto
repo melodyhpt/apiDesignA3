@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package apiDesignA3;
+
+import "inventory_objects.proto";
+
+service BookService {
+
+    rpc CreateBook(CreateBookRequest) returns (CreateBookResponse) {}
+
+    rpc GetBook(GetBookRequest) returns (GetBookResponse) {}
+}
+
+message CreateBookRequest {
+    apiDesignA3.Book book = 1;
+}
+
+message CreateBookResponse {
+    int32 statusCode = 1;
+}
+
+message GetBookRequest {
+    string isbn = 1;
+}
+
+message GetBookResponse {
+    apiDesignA3.Book book = 1;
+}
