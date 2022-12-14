@@ -6,7 +6,22 @@ import inventory_service_pb2
 import inventory_service_pb2_grpc
 
 
-inventory = dict()
+inventory = {
+    "9780786838653": {
+        "isbn": "9780786838653",
+        "title": "The Lightning Thief (Percy Jackson and the Olympians, Book 1)",
+        "author": "Rick Riordan",
+        "genre": "GENRE_THRILLER",
+        "year": 2006
+    },
+    "9781476753164": {
+        "isbn":  "9781476753164",
+        "title": "Maybe Someday",
+        "author": "Colleen Hoover",
+        "genre": "GENRE_ROMANCE",
+        "year": 2014
+    },
+}
 
 def required_field_provided(book):
     missingField = []
@@ -16,8 +31,6 @@ def required_field_provided(book):
         missingField.append("title")
     if book.author == "":
         missingField.append("author")
-
-    print("genre", book.genre)
     if book.genre == 0:
         missingField.append("genre")
 
