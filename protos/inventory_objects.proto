@@ -22,8 +22,9 @@ message InventoryItem {
     oneof item {
         Book book = 2;
     }
-    enum status {
+    enum Status {
         AVAILABLE = 0;
         TAKEN = 1;
     }
+    Status status = 3;
 }
