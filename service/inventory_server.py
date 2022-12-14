@@ -41,7 +41,6 @@ def required_field_provided(book):
 class InventoryService(inventory_service_pb2_grpc.InventoryServiceServicer):
 
     def CreateBook(self, request, context):
-        print("request", request.book)
         # check all required fields are provided
         errMsg = required_field_provided(request.book)
         if errMsg:
