@@ -4,7 +4,7 @@ package apiDesignA3;
 
 import "inventory_objects.proto";
 
-service BookService {
+service InventoryService {
 
     rpc CreateBook(CreateBookRequest) returns (CreateBookResponse) {}
 

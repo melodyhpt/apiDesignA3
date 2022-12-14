@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17inventory_objects.proto\x12\x0b\x61piDesignA3\"\xe7\x01\n\x04\x42ook\x12\x0c\n\x04isbn\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x0e\n\x06\x61uthor\x18\x03 \x01(\t\x12&\n\x05genre\x18\x04 \x01(\x0e\x32\x17.apiDesignA3.Book.Genre\x12\x11\n\x04year\x18\x05 \x01(\x05H\x00\x88\x01\x01\"n\n\x05Genre\x12\x15\n\x11GENRE_UNSPECIFIED\x10\x00\x12\x14\n\x10GENRE_HISTORICAL\x10\x01\x12\x11\n\rGENRE_ROMANCE\x10\x02\x12\x11\n\rGENRE_MYSTERY\x10\x03\x12\x12\n\x0eGENRE_THRILLER\x10\x04\x42\x07\n\x05_year\"t\n\rInventoryItem\x12\x14\n\x0cinventoryNum\x18\x01 \x01(\x05\x12!\n\x04\x62ook\x18\x02 \x01(\x0b\x32\x11.apiDesignA3.BookH\x00\"\"\n\x06status\x12\r\n\tAVAILABLE\x10\x00\x12\t\n\x05TAKEN\x10\x01\x42\x06\n\x04itemb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17inventory_objects.proto\x12\x0b\x61piDesignA3\"\xe7\x01\n\x04\x42ook\x12\x0c\n\x04isbn\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x0e\n\x06\x61uthor\x18\x03 \x01(\t\x12&\n\x05genre\x18\x04 \x01(\x0e\x32\x17.apiDesignA3.Book.Genre\x12\x11\n\x04year\x18\x05 \x01(\x05H\x00\x88\x01\x01\"n\n\x05Genre\x12\x15\n\x11GENRE_UNSPECIFIED\x10\x00\x12\x14\n\x10GENRE_HISTORICAL\x10\x01\x12\x11\n\rGENRE_ROMANCE\x10\x02\x12\x11\n\rGENRE_MYSTERY\x10\x03\x12\x12\n\x0eGENRE_THRILLER\x10\x04\x42\x07\n\x05_year\"\xa7\x01\n\rInventoryItem\x12\x14\n\x0cinventoryNum\x18\x01 \x01(\x05\x12!\n\x04\x62ook\x18\x02 \x01(\x0b\x32\x11.apiDesignA3.BookH\x00\x12\x31\n\x06status\x18\x03 \x01(\x0e\x32!.apiDesignA3.InventoryItem.Status\"\"\n\x06Status\x12\r\n\tAVAILABLE\x10\x00\x12\t\n\x05TAKEN\x10\x01\x42\x06\n\x04itemb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'inventory_objects_pb2', globals())
@@ -24,8 +24,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _BOOK._serialized_end=272
   _BOOK_GENRE._serialized_start=153
   _BOOK_GENRE._serialized_end=263
-  _INVENTORYITEM._serialized_start=274
-  _INVENTORYITEM._serialized_end=390
-  _INVENTORYITEM_STATUS._serialized_start=348
-  _INVENTORYITEM_STATUS._serialized_end=382
+  _INVENTORYITEM._serialized_start=275
+  _INVENTORYITEM._serialized_end=442
+  _INVENTORYITEM_STATUS._serialized_start=400
+  _INVENTORYITEM_STATUS._serialized_end=434
 # @@protoc_insertion_point(module_scope)

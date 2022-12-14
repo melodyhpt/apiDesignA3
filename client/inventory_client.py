@@ -14,7 +14,7 @@ class InventoryClient:
 
     def getBookTitle(self, isbn):
         with grpc.insecure_channel(self.serverUrl + ":" + str(self.serverPort)) as channel:
-            stub = inventory_service_pb2_grpc.BookServiceStub(channel)
+            stub = inventory_service_pb2_grpc.InventoryServiceStub(channel)
             try:
                 getBookResponse = stub.GetBook(inventory_service_pb2.GetBookRequest(isbn=isbn))
                 return getBookResponse.book.title

@@ -38,7 +38,7 @@ def required_field_provided(book):
         return "The following fields are required but not provided: " + ", ".join(missingField)
     
 
-class BookService(inventory_service_pb2_grpc.BookServiceServicer):
+class InventoryService(inventory_service_pb2_grpc.InventoryServiceServicer):
 
     def CreateBook(self, request, context):
         print("request", request.book)
@@ -73,7 +73,7 @@ class BookService(inventory_service_pb2_grpc.BookServiceServicer):
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    inventory_service_pb2_grpc.add_BookServiceServicer_to_server(BookService(), server)
+    inventory_service_pb2_grpc.add_InventoryServiceServicer_to_server(InventoryService(), server)
     server.add_insecure_port('[::]:50051')
     server.start()
     server.wait_for_termination()

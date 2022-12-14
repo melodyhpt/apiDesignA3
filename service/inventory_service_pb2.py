@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 import inventory_objects_pb2 as inventory__objects__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17inventory_service.proto\x12\x0b\x61piDesignA3\x1a\x17inventory_objects.proto\"4\n\x11\x43reateBookRequest\x12\x1f\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x11.apiDesignA3.Book\"(\n\x12\x43reateBookResponse\x12\x12\n\nstatusCode\x18\x01 \x01(\x05\"\x1e\n\x0eGetBookRequest\x12\x0c\n\x04isbn\x18\x01 \x01(\t\"2\n\x0fGetBookResponse\x12\x1f\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x11.apiDesignA3.Book2\xa6\x01\n\x0b\x42ookService\x12O\n\nCreateBook\x12\x1e.apiDesignA3.CreateBookRequest\x1a\x1f.apiDesignA3.CreateBookResponse\"\x00\x12\x46\n\x07GetBook\x12\x1b.apiDesignA3.GetBookRequest\x1a\x1c.apiDesignA3.GetBookResponse\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x17inventory_service.proto\x12\x0b\x61piDesignA3\x1a\x17inventory_objects.proto\"4\n\x11\x43reateBookRequest\x12\x1f\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x11.apiDesignA3.Book\"(\n\x12\x43reateBookResponse\x12\x12\n\nstatusCode\x18\x01 \x01(\x05\"\x1e\n\x0eGetBookRequest\x12\x0c\n\x04isbn\x18\x01 \x01(\t\"2\n\x0fGetBookResponse\x12\x1f\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x11.apiDesignA3.Book2\xab\x01\n\x10InventoryService\x12O\n\nCreateBook\x12\x1e.apiDesignA3.CreateBookRequest\x1a\x1f.apiDesignA3.CreateBookResponse\"\x00\x12\x46\n\x07GetBook\x12\x1b.apiDesignA3.GetBookRequest\x1a\x1c.apiDesignA3.GetBookResponse\"\x00\x62\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'inventory_service_pb2', globals())
@@ -29,6 +29,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _GETBOOKREQUEST._serialized_end=191
   _GETBOOKRESPONSE._serialized_start=193
   _GETBOOKRESPONSE._serialized_end=243
-  _BOOKSERVICE._serialized_start=246
-  _BOOKSERVICE._serialized_end=412
+  _INVENTORYSERVICE._serialized_start=246
+  _INVENTORYSERVICE._serialized_end=417
 # @@protoc_insertion_point(module_scope)
